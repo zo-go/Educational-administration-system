@@ -1,0 +1,188 @@
+{
+	"pages": [
+		// 登录页面
+		{
+			"path": "pages/login/login",
+			"style": {
+				// "transparentTitle": "always",
+				"navigationBarTitleText": "欢迎来到闽西职业技术学院",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#0059bf"
+			}
+
+		},
+		// 首页
+		{
+			"path": "pages/index/index",
+			"style": {
+				"onReachBottomDistance": 200
+			}
+		},
+		// 课程
+		{
+			"path": "pages/course/course"
+		},
+		// 工作
+		{
+			"path": "pages/work/work",
+			"style": {
+				"navigationBarTitleText": "应用大厅",
+				"enablePullDownRefresh": false
+			}
+		},
+		// 我的
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		// 用户详情
+		{
+			"path": "pages/home/userInfo",
+			"style": {
+				"navigationBarTitleText": "绑定学号",
+				"enablePullDownRefresh": false
+			}
+		}
+		// 设置
+		, {
+			"path": "pages/setUp/setUp",
+			"style": {
+				"navigationBarTitleText": "设置",
+				"enablePullDownRefresh": false
+			}
+		},
+		// 课程表
+		// {
+		// 	"path": "pages/work/course",
+		// 	"style": {
+		// 		"navigationBarTitleText": "",
+		// 		"enablePullDownRefresh": false
+		// 	}
+		// },
+		// 班级表
+		{
+			"path": "pages/home/classInfo",
+			"style": {
+				"navigationBarTitleText": "班级信息",
+				"enablePullDownRefresh": false
+			}
+		},
+		// 个人作品
+		{
+			"path": "pages/home/personalWorks",
+			"style": {
+				"navigationBarTitleText": "个人作品",
+				"enablePullDownRefresh": true
+			}
+
+		}
+		// 优秀作品
+		, {
+			"path": "pages/outstandingWorks/outstandingWorks",
+			"style": {
+				"navigationBarTitleText": "优秀作品",
+				"enablePullDownRefresh": false
+			}
+
+		}
+		// 请假申请
+		, {
+			"path": "pages/work/askLeave",
+			"style": {
+				"navigationBarTitleText": "请假申请",
+				"enablePullDownRefresh": false
+			}
+		},
+		// 成绩查询
+		{
+			"path": "pages/work/resultsQuery",
+			"style": {
+				"navigationBarTitleText": "成绩",
+				"enablePullDownRefresh": false
+			}
+		},
+		// 作品详情
+		{
+			"path": "pages/work/workDetails",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		// 问卷列表
+		{
+			"path": "pages/work/teacherScoreList",
+			"style": {
+				"navigationBarTitleText": "问卷调查",
+				"enablePullDownRefresh": false
+			}
+		},
+		// 问卷详情
+		{
+            "path" : "pages/work/questionnaireDetails",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        },
+		// 个人信息
+		{
+            "path" : "pages/home/personalLnformation",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarBackgroundColor": "#005AB5",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "闽西职业技术学院",
+		"allowsBounceVertical": "YES",
+		"enablePullDownRefresh": true,
+		"component": true,
+		"usingComponents": {}
+	},
+	"tabBar": {
+		"list": [{
+				"text": "首页",
+				"iconPath": "static/home.png",
+				"selectedIconPath": "static/home.png",
+				"pagePath": "pages/index/index"
+			},
+			{
+				"text": "课程",
+				"iconPath": "static/tab_course.png",
+				"selectedIconPath": "static/tab_course.png",
+				"pagePath": "pages/course/course"
+			},
+			{
+				"text": "工作",
+				"iconPath": "static/question_bank.png",
+				"selectedIconPath": "static/question_bank.png",
+				"pagePath": "pages/work/work"
+			},
+			{
+				"text": "我",
+				"iconPath": "static/tab_profile.png",
+				"selectedIconPath": "static/tab_profile.png",
+				"pagePath": "pages/home/home"
+			}
+		]
+	},
+	"condition": {
+		"current": 0,
+		"list": [{
+			"name": "详情",
+			"path": "pages/content/content",
+			"query": "id=88"
+		}]
+	}
+}

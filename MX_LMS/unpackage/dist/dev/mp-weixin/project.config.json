@@ -1,0 +1,38 @@
+{
+    "description": "项目配置文件。",
+    "packOptions": {
+        "ignore": [],
+        "include": []
+    },
+    "setting": {
+        "urlCheck": false,
+        "es6": true,
+        "postcss": true,
+        "minified": true,
+        "ignoreUploadUnusedFiles": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        }
+    },
+    "compileType": "miniprogram",
+    "libVersion": "2.25.2",
+    "appid": "wx250f9dda5d5aab2f",
+    "projectname": "MX_LMS",
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "详情",
+                    "pathName": "pages/content/content",
+                    "query": "id=88"
+                }
+            ]
+        }
+    },
+    "editorSetting": {
+        "tabIndent": "insertSpaces",
+        "tabSize": 4
+    }
+}

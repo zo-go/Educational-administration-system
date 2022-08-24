@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "成绩",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-data-select": "/uni_modules/uni-data-select/components/uni-data-select/uni-data-select",
+    "uni-grid": "/uni_modules/uni-grid/components/uni-grid/uni-grid",
+    "uni-grid-item": "/uni_modules/uni-grid/components/uni-grid-item/uni-grid-item",
+    "uni-card": "/uni_modules/uni-card/components/uni-card/uni-card"
+  }
+}

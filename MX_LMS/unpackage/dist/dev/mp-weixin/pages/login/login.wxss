@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.other.data-v-b237504c {
+  width: 100%;
+  margin-top: 50rpx;
+  z-index: 100;
+}
+.other-items.data-v-b237504c {
+  padding: 0 200rpx;
+}
+.other-icon.data-v-b237504c {
+  width: 65rpx;
+  height: 65rpx;
+  margin-left: 50rpx;
+}
+.wave.data-v-b237504c {
+  background-image: radial-gradient(#fff);
+  width: 725rpx;
+  height: 625rpx;
+  border-radius: 50%;
+  line-height: 100rpx;
+  margin: 0 auto;
+  font-size: 28rpx;
+  text-align: center;
+  -webkit-animation: water-wave-data-v-b237504c linear infinite;
+          animation: water-wave-data-v-b237504c linear infinite;
+}
+.wave1.data-v-b237504c {
+  position: absolute;
+  top: 80%;
+  left: -100%;
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+  opacity: .7;
+  width: 300%;
+  height: 300%;
+  border-radius: 50%;
+  -webkit-animation: inherit;
+          animation: inherit;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+.wave2.data-v-b237504c {
+  position: absolute;
+  top: 80%;
+  left: -100%;
+  background-image: linear-gradient(-225deg, #756d93 0%, #3584A7 51%, #30D2BE 100%);
+  opacity: .7;
+  width: 300%;
+  height: 300%;
+  border-radius: 45%;
+  -webkit-animation: inherit;
+          animation: inherit;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+}
+.wave3.data-v-b237504c {
+  position: absolute;
+  top: 80%;
+  left: -65%;
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+  opacity: .3;
+  width: 200%;
+  height: 200%;
+  border-radius: 40%;
+  -webkit-animation: inherit;
+          animation: inherit;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+@-webkit-keyframes water-wave-data-v-b237504c {
+0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+50% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+}
+100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+@keyframes water-wave-data-v-b237504c {
+0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+50% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+}
+100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+.container.data-v-b237504c {
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 0%);
+}
+.banner-img.data-v-b237504c {
+  background-color: #2986de;
+  width: 100%;
+}
+.login-box.data-v-b237504c {
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 80%);
+  padding-top: 1.5%;
+}
+.input-icon.data-v-b237504c {
+  width: 30rpx;
+  height: 38rpx;
+  margin-right: 5%;
+}
+.input1.data-v-b237504c,
+.input2.data-v-b237504c {
+  display: flex;
+  align-items: center;
+  border-left: 15rpx double #ffffff;
+  border-bottom: 7.5rpx solid #ffffff;
+  background-image: linear-gradient(45deg, #c0d3f7 0%, #c8e0f7 50%, #e4efe9 100%);
+  margin: 20rpx;
+  margin-bottom: 6.5% !important;
+  width: 640rpx;
+  height: 110rpx;
+  padding-left: 25rpx !important;
+  padding-right: 30rpx !important;
+  padding: 2rpx;
+  border-radius: 2%;
+  display: flex;
+  align-items: center;
+}
+.protocol.data-v-b237504c {
+  position: fixed;
+  bottom: 5%;
+  font-size: 1em;
+  color: #333333;
+  margin-left: 25%;
+  text-align: center;
+}
+.protocol ._span.data-v-b237504c {
+  color: #2986de;
+}
+.login-btn.data-v-b237504c {
+  background-color: #9bd6e7;
+  width: 50%;
+  margin-top: 3% !important;
+  margin-left: 25%;
+  font-size: 5rem;
+  color: #242424;
+  text-align: center;
+  border: 0.25rem double #98bdde;
+  border-radius: 5%;
+}
+.bg.data-v-b237504c {
+  position: relative;
+  width: 0rpx;
+  height: 400rpx;
+}
+.tab.data-v-b237504c {
+  position: absolute;
+  top: 250rpx;
+  left: 80rpx;
+  right: 440rpx;
+  height: 120rpx;
+  padding: 0 50rpx;
+  background-color: #b4ffcc;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  font-size: 2em;
+  border-radius: 10%;
+}
+.tab-bg.data-v-b237504c {
+  position: absolute;
+  right: -50rpx;
+  width: 900rpx;
+  height: 280rpx;
+}
+.tab1.data-v-b237504c {
+  position: absolute;
+  top: 250rpx;
+  left: 400rpx;
+  right: 110rpx;
+  height: 120rpx;
+  padding: 0 50rpx;
+  background-color: #b4ffcc;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  font-size: 2em;
+  border-radius: 10%;
+}
+.tab2.data-v-b237504c {
+  position: absolute;
+  top: 250rpx;
+  left: 400rpx;
+  right: 110rpx;
+  height: 120rpx;
+  padding: 0 50rpx;
+  background-color: #b4ffcc;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  font-size: 2em;
+  border-radius: 10%;
+}
+.line.data-v-b237504c {
+  width: 20rpx;
+  height: 0rpx;
+}
+.color-black-3.data-v-b237504c {
+  color: #ffffff;
+  margin-left: 300rpx;
+}
+.other-items.data-v-b237504c {
+  margin-top: 25rpx;
+}
+

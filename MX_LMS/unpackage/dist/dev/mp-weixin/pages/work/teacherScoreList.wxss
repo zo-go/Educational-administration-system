@@ -1,0 +1,27 @@
+
+.cp_tupian {
+	margin-left: 25%;
+	width: 50%;
+	height: 50%;
+}
+.cp-biaoti {
+	text-align: center;
+	font-size: 14px;
+	color: gray;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.cp-xiangmu {
+	width: 50%;
+	display: flex;
+	padding: 3px;
+	box-sizing: border-box;
+	flex-direction: column;
+	margin-bottom: 10%;
+}
+.content {
+	display: flex;
+	flex-wrap: wrap;
+}
+

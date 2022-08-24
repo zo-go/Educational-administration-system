@@ -1,0 +1,27 @@
+
+.title1 {
+	margin-bottom: 0px;
+}
+.title2 {
+	display: block;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+image {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
+.a {
+	font-size: 28rpx;
+	font-weight: 400;
+	color: rgba(51, 51, 51, 1);
+	line-height: 50rpx;
+	text-indent: 60rpx;
+	text-align: justify;
+	text-align-last: left;
+}
+.content {
+	padding: 10rpx 34rpx;
+}
+

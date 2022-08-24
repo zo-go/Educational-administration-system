@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-class-table": "/components/ClassTable2"
+  }
+}

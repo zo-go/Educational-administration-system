@@ -1,0 +1,9 @@
+{
+  "name": "MX_LMS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "vuex-persistedstate": "^4.1.0"
+  }
+}

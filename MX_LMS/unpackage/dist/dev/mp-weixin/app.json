@@ -1,0 +1,61 @@
+{
+    "pages": [
+        "pages/login/login",
+        "pages/index/index",
+        "pages/course/course",
+        "pages/work/work",
+        "pages/home/home",
+        "pages/home/userInfo",
+        "pages/setUp/setUp",
+        "pages/home/classInfo",
+        "pages/home/personalWorks",
+        "pages/outstandingWorks/outstandingWorks",
+        "pages/work/askLeave",
+        "pages/work/resultsQuery",
+        "pages/work/workDetails",
+        "pages/work/teacherScoreList",
+        "pages/work/questionnaireDetails",
+        "pages/home/personalLnformation"
+    ],
+    "subPackages": [],
+    "window": {
+        "navigationBarBackgroundColor": "#005AB5",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "闽西职业技术学院",
+        "allowsBounceVertical": "YES",
+        "enablePullDownRefresh": true,
+        "component": true
+    },
+    "tabBar": {
+        "list": [
+            {
+                "text": "首页",
+                "iconPath": "static/home.png",
+                "selectedIconPath": "static/home.png",
+                "pagePath": "pages/index/index"
+            },
+            {
+                "text": "课程",
+                "iconPath": "static/tab_course.png",
+                "selectedIconPath": "static/tab_course.png",
+                "pagePath": "pages/course/course"
+            },
+            {
+                "text": "工作",
+                "iconPath": "static/question_bank.png",
+                "selectedIconPath": "static/question_bank.png",
+                "pagePath": "pages/work/work"
+            },
+            {
+                "text": "我",
+                "iconPath": "static/tab_profile.png",
+                "selectedIconPath": "static/tab_profile.png",
+                "pagePath": "pages/home/home"
+            }
+        ]
+    },
+    "permission": {},
+    "lazyCodeLoading": "requiredComponents",
+    "usingComponents": {},
+    "sitemapLocation": "sitemap.json"
+}

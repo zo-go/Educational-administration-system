@@ -1,0 +1,23 @@
+
+.title {
+	text-align: center;
+	font: bold;
+	margin-bottom: 2%;
+}
+.box {
+	margin-top: 2%;
+	margin-left: 2%;
+}
+.warp {
+	display: flex;
+	align-items: center;
+	margin-top: 1%;
+}
+.input_box {
+	/* margin-left: %; */
+	width: 80%;
+	height: 60px;
+	border-radius: 5px;
+	border: 2rpx solid;
+}
+
