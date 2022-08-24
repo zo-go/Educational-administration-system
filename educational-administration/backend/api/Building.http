@@ -1,0 +1,38 @@
+@url=http://localhost:5003
+
+//建筑列表
+###
+GET {{url}}/building HTTP/1.1
+
+
+//建筑列表模糊查询
+###
+GET {{url}}/building?pageindex=1&pagesize=10&keyword=14 HTTP/1.1
+
+
+//建筑更新
+###
+PUT {{url}}/building/f99303f6-9f0d-4d64-8850-1c7ed6cf2bd1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "BuildingName":"团结里11栋",
+    "BuildingNum":"11",
+    "floor":"1"
+}
+
+//新增建筑
+###
+POST {{url}}/building HTTP/1.1
+Content-Type: application/json
+
+{
+    "BuildingName":"1号楼",
+    "BuildingNum":"1",
+    "Floor":"1"
+}
+
+
+//删除建筑
+###
+DELETE {{url}}/building/42e7f1ce-1b35-4d1e-ad34-54e4d6b95d7e HTTP/1.1

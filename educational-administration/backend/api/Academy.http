@@ -1,0 +1,32 @@
+@url=http://localhost:5003/academy
+
+
+//查询学院
+GET {{url}} HTTP/1.1
+
+//模糊查询
+###
+GET {{url}}/?keyword=49 HTTP/1.1
+
+//更新学院
+###
+PUT {{url}}/62759312-2669-4b5c-a37a-a6a48e00d02f HTTP/1.1
+Content-Type: application/json
+
+{
+    "AcademyName":"环境生态学院",
+    "AcademyNum":"49"
+}
+
+//新增学院
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "AcademyName":"生态环境学院"
+}
+
+//删除学院
+###
+DELETE {{url}}/69de0eca-4271-4413-bef3-6d659bda04c2 HTTP/1.1

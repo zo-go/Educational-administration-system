@@ -1,0 +1,110 @@
+@url=http://localhost:5003/questionnaire/option
+
+###
+GET {{url}} HTTP/1.1
+
+//新增问卷调查问题 选项
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "QuestionnaireID":"0a6b50c1-6f42-4886-9fc2-516cf3061918",
+    "QuestionnaireQuestionId" :"975b51c6-25bf-4fd8-9486-4e13f40dfb15",
+    "OptionName" : "10"
+}
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "QuestionnaireID":"f79a7528-e968-4901-83d7-74d5fae19ee3",
+    "QuestionnaireQuestionId" :"67e4c5dc-502f-4105-bf8e-85b24212c5af",
+    "OptionName" : "9"
+}
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "QuestionnaireID":"f79a7528-e968-4901-83d7-74d5fae19ee3",
+    "QuestionnaireQuestionId" :"67e4c5dc-502f-4105-bf8e-85b24212c5af",
+    "OptionName" : "8"
+}
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "QuestionnaireID":"f79a7528-e968-4901-83d7-74d5fae19ee3",
+    "QuestionnaireQuestionId" :"67e4c5dc-502f-4105-bf8e-85b24212c5af",
+    "OptionName" : "7"
+}
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "QuestionnaireID":"71768c2f-1b3e-440c-b847-816d5d518ab0",
+    "QuestionnaireQuestionId" :"62c03a79-6b7e-48dd-83bc-69d9ae2e872a",
+    "OptionName" : "6"
+}
+###
+POST http://localhost:5003/questionnaire/option HTTP/1.1
+Content-Type: application/json
+
+{
+    "QuestionnaireID":"f79a7528-e968-4901-83d7-74d5fae19ee3"
+}
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "QuestionnaireID":"f79a7528-e968-4901-83d7-74d5fae19ee3",
+    "QuestionnaireQuestionId" :"67e4c5dc-502f-4105-bf8e-85b24212c5af",
+    "OptionName" : "4"
+}
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "QuestionnaireID":"f79a7528-e968-4901-83d7-74d5fae19ee3",
+    "QuestionnaireQuestionId" :"67e4c5dc-502f-4105-bf8e-85b24212c5af",
+    "OptionName" : "3"
+}
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "QuestionnaireID":"f79a7528-e968-4901-83d7-74d5fae19ee3",
+    "QuestionnaireQuestionId" :"67e4c5dc-502f-4105-bf8e-85b24212c5af",
+    "OptionName" : "2"
+}
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "QuestionnaireID":"f79a7528-e968-4901-83d7-74d5fae19ee3",
+    "QuestionnaireQuestionId" :"67e4c5dc-502f-4105-bf8e-85b24212c5af",
+    "OptionName" : "1"
+}
+
+
+//修改问卷问题选项
+###
+PUT {{url}}/3429ecfd-9e24-4026-a658-001ed0943443 HTTP/1.1
+Content-Type: application/json
+
+{
+    "OptionName" :"dwadwadwad"
+}
+//删除问卷问题选项
+###
+DELETE {{url}}/3429ecfd-9e24-4026-a658-001ed0943443  HTTP/1.1
+
+
+

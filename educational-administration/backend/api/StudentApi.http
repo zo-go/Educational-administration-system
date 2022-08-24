@@ -1,0 +1,49 @@
+@url=http://localhost:5003/student
+
+### 查询所有
+GET {{url}} HTTP/1.1
+
+### 模糊查询
+GET {{url}}?keyword=2044010301 HTTP/1.1
+
+### 添加
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "StudentId":"",
+    "StudentName":"张三",
+    "Sex":"男",
+    "IdNumber":"350781196403078624",
+    "PhoneNumber":"17642569152",
+    "qqNumber":"495986283",
+    "EnrollmentTime":"2020",
+    "WeChat":"oidsg_934345",
+    "Address":"河北省邯郸市魏县",
+    "FatherName":"",
+    "MotherName":"",
+    "ContactDetails":"",
+    "ClassId":"9be8fbd9-b096-41b4-a256-0249a61a528c"
+}
+
+### 修改
+PUT {{url}}/6796ca3b-ab7d-4cda-bcd8-69ed4e184a1d HTTP/1.1
+Content-Type: application/json
+
+{
+    "StudentName":"aaa",
+    "Sex":"男",
+    "IdNumber":"350206197007252739",
+    "PhoneNumber":"17642569152",
+    "qqNumber":"82736423",  
+    "WeChat":"oidsg_92365",
+    "Address":"河北省邯郸市魏县",
+    "enrollmentTime": "2022",
+    "FatherName":"",
+    "MotherName":"",
+    "ContactDetails":"",
+    "ClassId":"9be8fbd9-b096-41b4-a256-0249a61a528c"
+}
+
+### 删除
+DELETE {{url}}/0b5c1370-44f5-4827-9773-ac3c6588b197 HTTP/1.1

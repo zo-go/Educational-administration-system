@@ -1,0 +1,32 @@
+@url = http://localhost:5003/user
+
+### 查询所有
+GET {{url}} HTTP/1.1
+
+### 查询所有
+GET {{url}}/admin HTTP/1.1
+
+### 模糊查询
+GET {{url}}?keyword=2044010302 HTTP/1.1
+
+### 添加
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "UserName":"admim",
+    "PassWord":"113",
+    "RoleId":"c55cc3d3-b0e4-4781-988d-e7f2f9c90e48"
+}
+
+### 修改
+PUT {{url}}/9756f954-51c5-4311-b907-fd339703bc4b HTTP/1.1
+Content-Type: application/json
+
+{
+    "UserName":"2044010135",
+    "PassWord":"094"
+}
+
+### 删除
+DELETE {{url}}/207431b4-0a02-4d66-871f-75b7ab0dc289 HTTP/1.1

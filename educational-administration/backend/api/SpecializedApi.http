@@ -1,0 +1,30 @@
+@url = http://localhost:5003/specialized
+
+### 查询所有
+GET {{url}} HTTP/1.1
+
+### 模糊查询
+GET {{url}}?keyword=42 HTTP/1.1
+
+### 添加
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "AcademyNum":"42",
+    "SpecializedNum":"15",
+    "SpecializedName":"病理学22222"
+}
+
+### 修改
+PUT {{url}}/366b5faa-4c26-4410-8653-f97fe8a2597e HTTP/1.1
+Content-Type: application/json
+
+{
+    "AcademyNum":"40",
+    "SpecializedNum":"100",
+    "SpecializedName":"生理学222"
+}
+
+### 删除
+DELETE {{url}}/70b43f2f-758f-4e70-bb1f-94f7662a5a7c HTTP/1.1

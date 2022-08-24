@@ -1,0 +1,32 @@
+@url = http://localhost:5003/textbook
+
+### 查询所有
+GET {{url}} HTTP/1.1
+
+### 模糊查询
+GET {{url}}?keyword=2044010135 HTTP/1.1
+
+### 添加
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "TextBookName":"中国建筑史",
+    "Press":"生活·读书·新知三联书店",
+    "Price":"65.00",
+    "ContactNumber":""
+}
+
+### 修改
+PUT {{url}}/04ac32c3-4941-44b3-9e58-973c98f73dfb HTTP/1.1
+Content-Type: application/json
+
+{
+    "TextBookName":"系统医学原理",
+    "Press":"中国科学技术出版社",
+    "Price":"60.00",
+    "ContactNumber":""
+}
+
+### 删除
+DELETE {{url}}/207431b4-0a02-4d66-871f-75b7ab0dc289 HTTP/1.1

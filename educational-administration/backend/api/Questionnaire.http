@@ -1,0 +1,48 @@
+@url=http://localhost:5003/questionnaire
+
+//查询问卷调查
+###
+GET {{url}}/ HTTP/1.1
+
+//查询问卷调查全部
+###
+GET {{url}}/f6bd6089-caf3-4d10-8386-1f3b9eb87ff1 HTTP/1.1
+
+//模糊查询 搜索
+###
+GET {{url}}/?keyword=7月 HTTP/1.1
+
+
+//新增问卷调查
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "QuestionnaireTheme" :"教师满意度调查问卷",
+    "QuestionnaireTitle" : "软件工程学院7月教师满意度调查问卷"
+}
+
+//修改问卷主题
+###
+PUT {{url}}/540496c0-5d11-4049-ae3b-e3caa2a97812 HTTP/1.1
+Content-Type: application/json
+
+{
+    "QuestionnaireTheme" :"学生满意度调查问卷",
+    "QuestionnaireTitle" : "软件工程学院12月教师满意度调查问卷",
+    "EndTime":"27/03/2005 10:46:02"
+}
+//删除问卷主题
+###
+DELETE {{url}}/540496c0-5d11-4049-ae3b-e3caa2a97812 HTTP/1.1
+
+
+//查询问卷调查
+###
+GET {{url}}/record/b8fc8e03-ff5d-4584-b58f-687f8ca6019a HTTP/1.1
+
+
+
+
+

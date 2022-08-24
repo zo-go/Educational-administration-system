@@ -1,0 +1,22 @@
+@url=http://localhost:5003/questionnaireres
+
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "QuestionnaireId":"735c8b7d-9bda-4edd-8828-da4823833c05",
+    "QuestionnaireQuestionId" :"f30ae36d-ebb0-4516-96c9-6ae8ac3e9cfd",
+    "OptionId" : "fd82701e-8d64-4b49-9645-316fdb20b165",
+    "optionValue":"单选2"
+}
+
+//查询问卷调查返回表
+###
+GET {{url}} HTTP/1.1
+
+//具体问卷返回值
+###
+GET {{url}}/key/?QuestionnaireId=86a3c337-2f6c-45ef-ac58-0f3edd8eeedc&CreatedBy=658fa48d-4435-4937-954c-9779e82e2fe1 HTTP/1.1
+
+###
+DELETE {{url}}/5faff5fd-8da6-41d2-aa3d-e3572a289349 HTTP/1.1

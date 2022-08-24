@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Web.Domain\Web.Domain.csproj" />
+  </ItemGroup>
+
+   <ItemGroup>
+    <!-- 为了使用WebApplication类型，必须引入Microsoft.AspNetCore.App，而且不是包引入，而是FrameworkReference引入 -->
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

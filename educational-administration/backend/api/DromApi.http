@@ -1,0 +1,47 @@
+@url = http://localhost:5003/drom
+
+
+//添加宿舍记录
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "BuildingNum":"13",
+    "DormitoryNum":103,
+    "StudentId":"2240111109",
+    "isDormAdmin":false
+}
+
+
+//查询宿舍列表
+###
+GET {{url}} HTTP/1.1
+
+###
+GET {{url}}/?keyword=dd HTTP/1.1
+
+
+//未满人宿舍列表
+###
+GET {{url}}/count/13 HTTP/1.1
+
+
+
+//更新宿舍记录
+###
+PUT {{url}}/7976ff56-32e6-4a45-a43f-6b28c7a2f38b HTTP/1.1
+Content-Type: application/json
+
+{
+    "BuildingNum":"14",
+    "DormitoryNum":102,
+    "StudentId":"2044010302",
+    "isDormAdmin":false
+}
+
+
+//删除宿舍记录
+###
+DELETE {{url}}/3cca0c31-cd41-4849-bdea-a4127effa938 HTTP/1.1
+

@@ -1,0 +1,31 @@
+@url = http://localhost:5003/course
+
+### 查询所有
+GET {{url}} HTTP/1.1
+
+### 模糊查询
+GET {{url}}?keyword=数据库高级 HTTP/1.1
+
+### 添加
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "CourseName":"nodejs1",
+    "specializedNum":"11",
+    "teacherId":"T3577264302",
+    "textBookId":"5246f935-14d5-4df0-b71c-bf40249c69df"
+}
+
+### 修改
+PUT {{url}}/b85747cb-9df4-4415-860a-973cc5878d37 HTTP/1.1
+Content-Type: application/json
+
+{
+    "CourseName":"Vue.js",
+    "specializedNum":"11",
+    "teacherId":"T3577264302"
+}
+
+### 删除
+DELETE {{url}}/ac56763d-4149-464f-bc71-0b3e6ab1c9d2 HTTP/1.1

@@ -1,0 +1,42 @@
+@url=http://localhost:5003/questionnaire/record
+
+
+//问题列表
+###
+GET  {{url}} HTTP/1.1
+
+//模糊查询
+###
+GET  {{url}}/?keyword=气氛 HTTP/1.1
+
+//新增问卷调查问题
+###
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "QuestionnaireID":"0a6b50c1-6f42-4886-9fc2-516cf3061918",
+    "QuestionnaireQuestion" :"您认为课堂上的学习气氛如何",
+    "OptionDescribe" : "满分10分最低分1分",
+    "QuestionnaireOptionType" : "单选",
+    "QuestionnaireFlag":1
+}
+
+//修改问卷问题
+###
+PUT {{url}}/30b84b51-a9a4-4df0-b0ed-673f5283a247 HTTP/1.1
+Content-Type: application/json
+
+{
+    "QuestionnaireQuestion" :"默认问题",
+    "OptionDescribe" : "描述2222",
+    "QuestionnaireOptionType":"多都选",
+    "QuestionnaireFlag":1
+}
+//删除问卷问题
+###
+DELETE {{url}}/30b84b51-a9a4-4df0-b0ed-673f5283a247 HTTP/1.1
+
+
+
+
